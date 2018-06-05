@@ -1,0 +1,35 @@
+{
+  "name": "@iddan/react-diagrams",
+  "description": "Declarative version of storm-react-diagrams",
+  "version": "0.1.0",
+  "dependencies": {
+    "babel-preset-react-app": "^4.0.0-next.66cc7a90",
+    "storm-react-diagrams": "^5.2.1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.49",
+    "@babel/core": "^7.0.0-beta.49",
+    "@storybook/addon-actions": "^3.4.6",
+    "@storybook/addon-links": "^3.4.6",
+    "@storybook/addons": "^3.4.6",
+    "@storybook/react": "^3.4.6",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-runtime": "^6.26.0",
+    "eslint": "^4.19.1",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.49.3",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.9.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "scripts": {
+    "build": "NODE_ENV=\"production\" yarn run babel src --out-dir dist",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "prepublish": "npm run build"
+  }
+}
